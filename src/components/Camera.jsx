@@ -83,13 +83,15 @@ function Camera() {
 
   return (
     <div className="relative bg-white">
+        <h1 className='text-center mb-16 h1-font text-3xl	
+        '> Couture Lens </h1>
       <div className="aspect-w-4 aspect-h-3 max-w-lg mx-auto relative">
         <video ref={videoRef} autoPlay playsInline className="w-full h-full object-cover"></video>
         <img src="/dress-2.png" alt="Dress Overlay" className="absolute top-0 left-0 w-full h-full object-cover" />
         <canvas  ref={canvasRef} style={{ display: 'none' }}></canvas>
       </div>
-      <div className="flex justify-center mt-4">
-        <button onClick={handleSave} className="save-button bg-blue-500 text-white py-2 px-4 rounded">Save Image</button>
+      <div className="flex justify-center mt-16">
+        <button onClick={handleSave} className="save-button bg-blue-500 text-white py-2 px-4 rounded h1-font">Save Image</button>
       </div>
     </div>
   );
